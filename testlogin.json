@@ -1,19 +1,19 @@
 [
+ {
+  "id":1,
+  "username":"Chirag.Bhatt@gmail.com",
+  "password":"Admin@123"
+},
+
 {
-    "id":1,
-    "username":"mukesh1@gmail.com",
-    "password":"admin@123"
-    
-    },
+  "id":2,
+  "username":"Chirag.Bhatt1@gmail.com",
+  "password":"Admin@1234"
+},
 
-  {  
-    "id":2,
-    "username":"mukesh2@gmail.com",
-    "password":"admin@123"},
-
-{ 
-    "id":3,
-     "username":"mukesh3@gmail.com",
-     "password":"admin@123"}
-
+{
+  "id":3,
+  "username":"Chirag.Bhatt12@gmail.com",
+  "password":"Admin@12345"
+}
 ]
