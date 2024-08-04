@@ -1,20 +1,11 @@
+
 const{test, expect} = require("@playwright/test")
 
-const testdata=JSON.parse(JSON.stringify(require("../testlogin copy.json")))
 
-
-test.describe("Reg", function()
-{
-   for(const data of testdata)
-   {
-      test.describe(`Data drive ${data.id}`, function()
-       
-        {
-           
-   test("Parameterization1", async({page}) =>{
+test("File upload", async({page})=>{
              
     await page.goto("https://headway.org.in/#/login")
-    await page.locator("//input[@inputmode='numeric']").fill(data.Mobile)
+    await page.locator("//input[@inputmode='numeric']").fill("9825693304")
         
     await page.getByRole('button', {name: 'Get OTP'}).click()
 
@@ -27,7 +18,7 @@ test.describe("Reg", function()
 
     //await expect(page.getByText('User Profile')).toBeVisible();
 
-    await page.locator("xpath=//img[@class='w-8 h-8 rounded-full ']").click()
+   await page.locator("xpath=//img[@class='w-8 h-8 rounded-full ']").click()
     
    await page.locator("xpath=//div[normalize-space()='My Account']").click()
     
@@ -36,15 +27,11 @@ test.describe("Reg", function()
    await page.locator("xpath=//i[contains(@class,'fa fa-edit text-orange-500')]").setInputFiles("C:/Users/Krishna/Desktop/TestImage.jpg")
 
 
-
-
-
-
       })
-   })
-}
 
 
 
 
-})
+
+
+

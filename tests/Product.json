@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "url": "https://demo.nopcommerce.com/",
+        "product": "//div[@class='tags']//a[contains(text(),'apparel')]",       
+        "expect": "//h1[1]",
+        "expecttext":"Products tagged with 'appare'"
+    },
+    {
+        "id": 2,
+        "url": "https://demo.nopcommerce.com/",
+        "product": "//a[normalize-space()='awesome']",
+        "expect": "//h1[1]",
+        "expecttext":"Products tagged with 'awesome'"
+    },
+    {
+        "id": 3,
+        "url": "https://demo.nopcommerce.com/",
+        "product": "//a[normalize-space()='book']",
+        "expect": "//h1[1]",
+        "expecttext":"Products tagged with 'book'"
+    },
+    {
+        "id": 4,
+        "url": "https://demo.nopcommerce.com/",
+        "product": "//a[normalize-space()='camera']",
+        "expect": "//h1[1]",
+        "expecttext":"Products tagged with 'camera'"
+    }
+]

@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "../.vscode"
+		},
+		{
+			"path": "../LocalRepo"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../playwright-report"
+		},
+		{
+			"path": "../test-results"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../tests-examples"
+		}
+	]
+}
