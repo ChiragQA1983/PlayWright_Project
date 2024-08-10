@@ -17,11 +17,13 @@ test('File upload', async ({ page }) => {
     await page.locator("xpath=//img[@class='w-8 h-8 rounded-full ']").click();
     await page.locator("xpath=//div[normalize-space()='My Account']").click();
    
-    await page.locator("xpath=//div[contains(@class,'max-md:pr-5 border border-gray-200 border-solid')]").click();
+    await page.locator("xpath=//div[contains(@class,'max-md:pr-5 font-medium text-orange-500 terms_bg_clr')]").click();
 
     const filePath = path.resolve('tests/Ayane.png');
 
-    const fileinput = await page.getByAltText('Profile')
+    //const fileinput = await page.getByAltText('Profile')
+
+    const fileinput = await page.locator("xpath=//img[@alt='Profile']")
   
     await expect(fileinput).toBeVisible();
 

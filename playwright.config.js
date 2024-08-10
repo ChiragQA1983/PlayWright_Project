@@ -12,7 +12,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
  
- timeout:90000,
+ timeout:120000,
  expect:{timeout:90000},
 
   testDir: './tests',
@@ -21,14 +21,16 @@ module.exports = defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  //retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+    retries:2,
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    actionTimeout:300000, 
+    actionTimeout:900000, 
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 

@@ -10,6 +10,10 @@ test('Handle CheckBox and Radio Button', async({page})=>{
     //await page.locator('#gender-male').check();
     // another method of handle radiobutton or checkbox
 
+
+    const mytext=await page.locator("xpath=//h1[normalize-space()='Welcome, Please Sign In!']").textContent();
+    console.log(mytext)
+
     await page.check('#gender-male')
 
   //  await expect (await page.locator('#gender-male')).toBeChecked();
